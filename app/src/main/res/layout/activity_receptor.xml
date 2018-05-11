@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceptorActivity">
+
+    <TextView
+        android:id="@+id/textNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Ingresado:"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textNombreRecibido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[nombre recibido de Activity anterior]"
+        android:layout_toRightOf="@id/textNombre"/>
+
+    <TextView
+        android:id="@+id/textApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido Ingresado: "
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textNombre"/>
+
+    <TextView
+        android:id="@+id/textApellidoRecibido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[apellido recibido de Activity anterior]"
+        android:layout_toRightOf="@id/textApellido"
+        android:layout_alignBottom="@id/textApellido"/>
+
+    <TextView
+        android:id="@+id/textEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad Ingresada: "
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textApellido"/>
+    <TextView
+        android:id="@+id/textEdadRecibida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[edad recibida de Activity anterior]"
+        android:layout_toRightOf="@id/textEdad"
+        android:layout_alignBottom="@id/textEdad"/>
+</RelativeLayout>
